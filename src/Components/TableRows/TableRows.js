@@ -21,7 +21,7 @@ class TableRows extends Component {
   getFromDatabase = () => {
     this.baseState();
     return axios
-      .get("/api/getFromDatabase")
+      .get("https://adminacprreact.herokuapp.com/api/getFromDatabase")
       .then(res => {
         this.setState({ results: this.state.results.concat(res.data) });
         console.log(this.state.results);

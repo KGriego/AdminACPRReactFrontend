@@ -66,7 +66,7 @@ class AddNew extends React.Component {
       alert("You must input the status of the repair");
       return false;
     } else {
-      return Axios.post("/api/addToDatabase", {
+      return Axios.post("https://adminacprreact.herokuapp.com/api/addToDatabase", {
         name,
         phoneNumber,
         device,

@@ -22,7 +22,7 @@ class RowButton extends Component {
     const rowId = e.target.value;
     const text = e.target.textContent;
     axios
-      .post("/api/updateDatabase", { rowId, text })
+      .post("https://adminacprreact.herokuapp.com/api/updateDatabase", { rowId, text })
       .then(res => {
         console.log("updating database", res);
       })
